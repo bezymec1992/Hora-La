@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     height: 120px;
+    z-index: 1;
 }
 
 .header__wrapp {
@@ -267,6 +268,162 @@
     line-height: 28px
 }
 
+.tb {
+    margin-bottom: 20px;
+}
+
+
+.table__titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.table__title {
+    font-size: 39.81px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: capitalize;
+}
+
+.table__subtitle {
+    padding-right: 10px;
+    color: #515865;
+}
+
+.table__title-span {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.casino-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 8px 0 16px;
+}
+
+.brend {
+    border-radius: 12px;
+}
+
+.brend__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 320px;
+    width: 100%;
+}
+
+.score {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.more {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #2F7EF3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.table__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.table__item {
+    font-size: 16px;
+    color: #686E80;
+    font-weight: 400;
+}
+
+.dot {
+    border: 1px dashed #2F7EF3;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #F2F4FF;
+}
+
+.dot__txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #2F7EF3;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px
+}
+
+.dot__tiitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 10px 0;
+}
+
+
+.table__btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 169px;
+    width: 100%;
+    margin-left: auto;
+    white-space: nowrap;
+    border-radius: 16px;
+    gap: 4px;
+    justify-content: center;
+    cursor: pointer;
+    padding: 19px 14px;
+}
+
+.table__btn-1 {
+    background-color: #1DB954;
+    color: white;
+    margin-bottom: 12px;
+    transition: ease 0.5s;
+}
+
+.table__btn-1:hover  {
+    background-color: #1a9143;
+}
+
+.table__btn-2 {
+    background-color: #F2F4FF;
+    color: #2F7EF3;
+    text-align: center;
+    transition: ease 0.5s;
+}
+
+.table__btn-2:hover  {
+    background-color: #dadada;
+}
+
+
+
 @media only screen and (max-width: 992px) {
     .burger {
         display: block;
@@ -297,6 +454,21 @@
         line-height: 40px;
     }
 
+    .table__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        margin-bottom: 19px;
+    }
+
+    .table__titles {
+        margin-bottom: 19px;
+    }
+
+    .table__list {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -313,5 +485,38 @@
     .person__date {
         padding-top: 12px;
         border-top: 1px solid gray;
+    }
+
+    .table__titles {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .tb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab {
+        padding: 12px;
+    }
+
+    .dot {
+        padding: 12px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .table__btn {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+
+    .brend {
+        max-width: 122px;
+        width: 100%;
+        height: auto;
     }
 }
